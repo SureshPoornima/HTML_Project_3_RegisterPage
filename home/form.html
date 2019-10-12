@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html><!--html opening tag-- >
+  <head><!--head tag will contain the title and if any  css code used-->
+    <title>Form</title>
+  </head><!--closing of the head tag-->
+    <body><!--here the body starts-->
+      <form action="google.co.in" method="GET"><!--form tag for creating form in html-->
+        <fieldset><!--fieldset tag is for creating a field in html -->
+          <legend>Your Details:</legend><!--legend tag is for creating a name for the field-->
+          <label>Name: <input type="text" name="name"/></label><br/><!-- label tag is for creating a label-->
+          <label>Email: <input type="email" name="email"/></label>
+        </fieldset><!--field ending tag-->
+        <fieldset>
+          <legend>Your Review</legend>
+            <p>How did you hear about us?<!--p tag is used for writing paagraphs-->
+              <select name="Google"><!--select tag is for creating drop down button in html-->
+                <option>Google</option><!--option tag is used for list the contents in dropdown button-->
+                <option>Twitter</option>
+                <option>Facebook</option>
+              </select><!--here the select tag ends-->
+            </p>
+            <p>Would you visit again?</p><br/>
+            <input type="radio" name="ans" value="yes"/>Yes<!--input type="radio" is for making the button as radio-->
+            <input type="radio" name="ans" value="no"/>No
+            <input type="radio" name="ans" value="maybe"/>Maybe<br/>
+            <p>Comments:</p>
+            <textarea name="comments" cols="20" row="4"></textarea><!--textarea tag is used for writing comments in the page we can provide the default size to the text area by giving size-->
+            <br/>
+            <p>
+            <input type="checkbox" name="sign" value="Sign me up for email updates" /><!--input type="chekbox" is used to checking purpose-->
+            Sign me up for email updates</p>
+            <br/>
+            <input type="submit" name="Submit review"  value="Submit review"/><!--input type="submit" is for maikng the button as submit-->
+        </fieldset>
+      </form><!--end of the form-->
+    </body><!--end of the body tag-->
+</html><!--end of the html tag or page-->
